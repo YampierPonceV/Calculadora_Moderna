@@ -1,0 +1,268 @@
+/* IMPORTACION DE LA FUENTE DE TEXTO */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+/* VARIABLES */
+/* RESETEA EL RELLENO Y EL MARGEN  */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3b4664;
+  font-family: 'Rubik', sans-serif;
+  -webkit-transition: ease-in-out all .5s;
+  transition: ease-in-out all .5s;
+}
+
+body .contenedor {
+  width: 400px;
+  min-width: 300px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .contenedor .title_container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eae3db;
+}
+
+body .contenedor .title_container .container_marcadorSwitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 120px;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .marcadorSwitch_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .marcadorSwitch_title p {
+  font-size: 12px;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .switch_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .switch_container .numerador_switch {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .switch_container .numerador_switch button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #eae3db;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .switch_container .bg_switch {
+  width: 100%;
+  height: 20px;
+  background-color: #252c46;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .switch_container .bg_switch .switch_item {
+  -webkit-transition: linear all .5s;
+  transition: linear all .5s;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #d13f30;
+}
+
+body .contenedor .title_container .container_marcadorSwitch .switch_container .bg_switch .switch-dos,
+body .contenedor .title_container .container_marcadorSwitch .switch_container .bg_switch .switch-tres {
+  opacity: 0;
+}
+
+body .contenedor .container_width {
+  width: 80%;
+}
+
+body .contenedor .container_valores {
+  height: 100px;
+  background-color: #181f32;
+  border-radius: 10px;
+  padding: 15px;
+  color: #eae3db;
+}
+
+body .contenedor .container_valores .valor_anterior {
+  height: 45px;
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body .contenedor .container_valores .valor_actual {
+  height: 25px;
+  font-size: 18px;
+  text-align: right;
+  font-weight: bold;
+}
+
+body .contenedor .container_botones {
+  height: 300px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  background-color: #252d44;
+}
+
+body .contenedor .container_botones .group_uno_btn,
+body .contenedor .container_botones .group_dos_btn,
+body .contenedor .container_botones .group_tres_btn,
+body .contenedor .container_botones .group_cuatro_btn,
+body .contenedor .container_botones .group_cinco_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .contenedor .container_botones .group_uno_btn button,
+body .contenedor .container_botones .group_dos_btn button,
+body .contenedor .container_botones .group_tres_btn button,
+body .contenedor .container_botones .group_cuatro_btn button,
+body .contenedor .container_botones .group_cinco_btn button {
+  cursor: pointer;
+  width: 60px;
+  height: 45px;
+  background-color: #eae3db;
+  border-radius: 10px;
+  border: none;
+  color: #252d44;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  border-bottom: 3px solid #c2beba;
+}
+
+@media screen and (max-width: 375px) {
+  body .contenedor .container_botones .group_uno_btn button,
+  body .contenedor .container_botones .group_dos_btn button,
+  body .contenedor .container_botones .group_tres_btn button,
+  body .contenedor .container_botones .group_cuatro_btn button,
+  body .contenedor .container_botones .group_cinco_btn button {
+    width: 45px;
+  }
+}
+
+body .contenedor .container_botones .group_uno_btn button:nth-child(4) {
+  color: #eae3db;
+  background-color: #647299;
+  border-bottom: 3px solid #515e83;
+}
+
+body .contenedor .container_botones .group_cinco_btn button {
+  width: 47%;
+  height: 40px;
+  color: #eae3db;
+}
+
+body .contenedor .container_botones .group_cinco_btn button:nth-child(1) {
+  background-color: #647299;
+  border-bottom: 3px solid #515e83;
+}
+
+body .contenedor .container_botones .group_cinco_btn button:nth-child(2) {
+  background-color: #d13f30;
+  border-bottom: 3px solid #9b2d21;
+}
+
+.body_them_dos {
+  background-color: #e6e6e6;
+}
+
+.body_them_tres {
+  background-color: #17062a;
+}
+/*# sourceMappingURL=estilos.css.map */

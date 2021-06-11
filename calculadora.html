@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body id="body_theme_id">
+    <div class="contenedor">
+      <div class="title_container" id="title_container">
+        <div>
+          <h3>Calc</h3>
+        </div>
+        <div class="container_marcadorSwitch">
+          <div class="marcadorSwitch_title">
+            <p>THEME</p>
+          </div>
+          <div class="switch_container">
+            <div class="numerador_switch">
+              <button id="marcadores-uno">1</button>
+              <button id="marcadores-dos">2</button>
+              <button id="marcadores-tres">3</button>
+            </div>
+            <div class="bg_switch" id="bg_switch">
+              <div class="switch-uno switch_item" id="switch_uno"></div>
+              <div class="switch-dos switch_item" id="switch_dos"></div>
+              <div class="switch-tres switch_item" id="switch_tres"></div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_valores container_width" id="container_valores">
+        <div class="valor_anterior" id="valor-anterior"></div>
+        <div class="valor_actual"id="valor-actual"></div>
+      </div>
+      <div class="container_botones container_width" id="container_botones">
+        <div class="group_uno_btn">
+          <button class="numero">7</button>
+          <button class="numero">8</button>
+          <button class="numero">9</button>
+          <button onclick="display.borrar()" id="btn_delete">DEL</button>
+        </div>
+        <div class="group_dos_btn">
+          <button class="numero">4</button>
+          <button class="numero">5</button>
+          <button class="numero">6</button>
+          <button class="operador" value="sumar">+</button>
+        </div>
+        <div class="group_tres_btn">
+          <button class="numero">1</button>
+          <button class="numero">2</button>
+          <button class="numero">3</button>
+          <button class="operador" value="restar">-</button>
+        </div>
+        <div class="group_cuatro_btn">
+          <button class="numero">.</button>
+          <button class="numero">0</button>
+          <button class="operador" value="dividir">/</button>
+          <button class="operador" value="multiplicar">X</button>
+        </div>
+        <div class="group_cinco_btn">
+        <button onclick="display.borrarTodo()" id="btn_reset">RESET</button>
+        <button class="operador" value="igual"id="btn_igual">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/Display.js"></script>
+    <script src="/js/themas-cal.js"></script>
+    <script src="./js/Calculador.js"></script>
+    <script src="/js/index.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,210 @@
+/* IMPORTACION DE LA FUENTE DE TEXTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* VARIABLES */
+$FONDO_THEMA_UNO: #3b4664;
+$FONDO_THEMA_DOS: #e6e6e6;
+$FONDO_THEMA_TRES: #17062a;
+
+$bg_btn_igual_switch: #d13f30;
+$border_btn_igual: #9b2d21;
+
+$bg_swith: #252c46;
+
+$bg_btn_reset_delete: #647299;
+$border_btn_reset_delete: #515e83;
+
+$btn_bg: #eae3db;
+$btn_color: #252d44;
+$btn_border_color: #c2beba;
+
+$btn_group_cinco_color: #eae3db;
+
+$btn_container_bg: #252d44;
+
+$bg_container_valores: #181f32;
+
+/* RESETEA EL RELLENO Y EL MARGEN  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $FONDO_THEMA_UNO;
+  font-family: 'Rubik', sans-serif;
+  transition: ease-in-out all .5s;
+
+  .contenedor {
+    width: 400px;
+    min-width: 300px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .title_container {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $btn_group_cinco_color;
+
+      .container_marcadorSwitch {
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+        .marcadorSwitch_title {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+
+          p {
+            font-size: 12px;
+          }
+        }
+
+        .switch_container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 50%;
+          .numerador_switch {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            button {
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: $btn_group_cinco_color;
+              font-size: 14px;
+              font-weight: bold;
+              font-family: 'Rubik', sans-serif;
+              cursor: pointer;
+            }
+          }
+          .bg_switch {
+            width: 100%;
+            height: 20px;
+            background-color: $bg_swith;
+            border-radius: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .switch_item {
+              transition: linear all .5s;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              cursor: pointer;
+              background-color: $bg_btn_igual_switch;
+            }
+            .switch-dos,
+            .switch-tres {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+    .container_width {
+      width: 80%;
+    }
+
+    .container_valores {
+      height: 100px;
+      background-color: $bg_container_valores;
+      border-radius: 10px;
+      padding: 15px;
+      color: $btn_group_cinco_color;
+
+      .valor_anterior {
+        height: 45px;
+        text-align: right;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .valor_actual {
+        height: 25px;
+        font-size: 18px;
+        text-align: right;
+        font-weight: bold;
+      }
+    }
+    .container_botones {
+      height: 300px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px;
+      background-color: $btn_container_bg;
+
+      .group_uno_btn,
+      .group_dos_btn,
+      .group_tres_btn,
+      .group_cuatro_btn,
+      .group_cinco_btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          cursor: pointer;
+          width: 60px;
+          height: 45px;
+          background-color: $btn_bg;
+          border-radius: 10px;
+          border: none;
+          color: $btn_color;
+          font-family: 'Rubik', sans-serif;
+          font-size: 18px;
+          border-bottom: 3px solid $btn_border_color;
+
+          @media screen and(max-width:375px) {
+            width: 45px;
+          }
+        }
+      }
+      .group_uno_btn {
+        button:nth-child(4) {
+          color: $btn_group_cinco_color;
+          background-color: $bg_btn_reset_delete;
+          border-bottom: 3px solid $border_btn_reset_delete;
+        }
+      }
+      .group_cinco_btn {
+        button {
+          width: 47%;
+          height: 40px;
+          color: $btn_group_cinco_color;
+        }
+        button:nth-child(1) {
+          background-color: $bg_btn_reset_delete;
+          border-bottom: 3px solid $border_btn_reset_delete;
+        }
+        button:nth-child(2) {
+          background-color: $bg_btn_igual_switch;
+          border-bottom: 3px solid $border_btn_igual;
+        }
+      }
+    }
+  }
+}
+.body_them_dos{
+  background-color: $FONDO_THEMA_DOS;
+}
+.body_them_tres{
+  background-color: $FONDO_THEMA_TRES;
+}
