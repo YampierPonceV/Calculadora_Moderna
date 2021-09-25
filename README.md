@@ -6,5 +6,3 @@
 
 #### Cogido para la comunidad y a seguir mejorando!!
 
-### Demo
-[https://yampierdev.github.io/Calculadora_Moderna/]
